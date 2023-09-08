@@ -156,7 +156,7 @@
 //     <Component>
 //       <Box>
 //         {/* <Image src={imageURL}></Image> */}
-//         <Image src='images/UDFlogo1.PNG'></Image>
+//         <Image src='images/UDFlogo1.jpg'></Image>
 //         {account === "login" ? (
 //           <Wrapper>
 //             <TextField
@@ -391,7 +391,7 @@ const Login = ({isUserAuthenticated}) => {
     <Component>
       <Box>
         {/* <Image src={imageURL}></Image> */}
-        <Image src='images/UDFlogo1.jpg'></Image>
+        <Image src='images/UDFlogo.PNG'></Image>
         {account === "login" ? (
           <Wrapper>
             <TextField
