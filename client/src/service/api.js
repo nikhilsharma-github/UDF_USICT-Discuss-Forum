@@ -10,7 +10,7 @@ const axiosInstance = axios.create({
   baseURL: API_URL,
   timeout: 10000, 
   headers: {
-      "content-type": "application/json"
+      "Content-Type": "application/json"
   }
 });
 
@@ -52,7 +52,7 @@ const processResponse = (response) => {
 }
 
 const processError=(error)=>{
-    if(error.response){
+    if(error.response.data){
         console.log("ERROR IN RESPONSE",error.toJSON());
         return{
             isError:true,
@@ -61,7 +61,7 @@ const processError=(error)=>{
         }
         
     }
-    else if(error.request){
+    else if(error.request.data){
         console.log("ERROR IN REQUEST",error.toJSON());
         return{
             isError:true,
