@@ -49,7 +49,7 @@ const Header = () => {
         <Link to="/">
           <Image
           className="imageResp"
-            src="images/UDFlogo1.PNG"
+            src="images/UDFlogo1.jpg"
           />
         </Link>
         <Link to="/">Home</Link>
