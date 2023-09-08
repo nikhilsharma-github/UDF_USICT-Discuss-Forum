@@ -10,6 +10,7 @@ const Connection= async(username,password)=>{
 
     const URL=`mongodb+srv://${username}:${password}@utkrishtprojectcluster.nho8l.mongodb.net/?retryWrites=true&w=majority`;
     try{
+        mongoose.set('strictQuery',false);
             await mongoose.connect(URL, {
                 // useNewUrlParser: true,
                 // useUnifiedTopology: true,
